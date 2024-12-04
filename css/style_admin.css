@@ -1,0 +1,188 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.1em; 
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.2em;
+}
+
+a {
+    position: fixed;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.admin-table th {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+}
+
+.admin-table td {
+    background-color: #f4f4f9;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.movie-image {
+    width: 100%;  
+    max-width: 300px; 
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; 
+    height: auto; 
+}
+
+.image-cell {
+    text-align: center;  
+    vertical-align: middle;  
+}
+
+.movie-image {
+    max-width: 300px; 
+    height: auto;  
+}
+
+.actions {
+    text-align: center;
+}
+
+.btn-edit, .btn-delete {
+    margin: 0 10px; 
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; 
+    }
+
+    header p, nav ul li a, h1, a {
+        font-size: 1em; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 8px; 
+    }
+
+    a {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 2.5em; 
+    }
+
+    nav ul li a {
+        font-size: 1.2em; 
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 12px; 
+    }
+}
+
